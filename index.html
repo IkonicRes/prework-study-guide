@@ -26,7 +26,31 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>CSS is used to define how webpage content is presented to users</li>
+          <li>Whereas HTML stricly handles structure and content, CSS defines colors, aesthetics, visual layout and organization</li>
+          <li>There are three ways to style a page using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet</li>
+          <h3>Inline CSS</h3>
+          <ul>
+            <li>When a developer wants to style an element directly in the HTML file, they use inline CSS.</li>
+            <li>Inline styles let you change how one thing looks on a webpage by putting a special code right next to it. This is good for making fast and lasting changes, but it's not very flexible. For a lot of changes at once, it takes more work than using the other methods.</li>
+            <li>An example of inline CSS is using the style attribute to change the color of a single h1 heading: < h1 style="color:red;">Prework Study Guide < /h1></li>
+          </ul>
+          <h3>Internal CSS Style Sheet</h3>
+          <ul>
+            <li>Internal style sheets can include CSS ules for the webpage in the head section of the HTML file, but the rules only apply to that page.</li>
+            <li>You can configure CSS classes and ID's, whcih are used to identify elements, to style multiple elements in the page code. A single change will affect all tagged elements.</li>
+            <li>This code when put in the head ensures that all "h1" elements will be red.
+                 h1 {
+              color: red;
+            }</li>
+          </ul>
+          <h3>External CSS Style Sheet</h3>
+          <ul>
+            <li>Inline CSS and internal style sheets are totally acceptable methods under certain conditions, but the most common way to style a webpage is by using an external CSS style sheet.</li>
+            <li>This allows you to keep all your CSS rules in a separate file, making design changes easier</li>
+            <li>When using External SS, we link the file using a < link > element placed in the HTML's head like so:  < link rel="stylesheet" href="./assets/style.css" /></li>
+            <li>Separation of concerns is a widely used term in web development and refers to separating code into different files based on use. It is one of the key design principles that we practice in the boot camp. Separation of concerns is based on the idea that each section of code should have its own responsibility.</li>
+          </ul>
         </ul>
       </section>
 
