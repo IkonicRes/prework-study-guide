@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0," />
+    <link rel="stylesheet" href="/assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body style="background-color: rgb(58, 58, 58); color: #00fff4;">
     <header id="header">
+      </br></br>
       <h1 style="text-align: center; color: #00fff4;">Prework Study Guide</h1>
       <center><img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." /> </center>
     </header>
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
     <main>
 
       <section class="card" id="html-section">
@@ -25,17 +28,22 @@
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
+        </br>
         <ul>
           <li>CSS is used to define how webpage content is presented to users</li>
           <li>Whereas HTML stricly handles structure and content, CSS defines colors, aesthetics, visual layout and organization</li>
           <li>There are three ways to style a page using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet</li>
+          </br>
           <h3>Inline CSS</h3>
+          </br>
           <ul>
             <li>When a developer wants to style an element directly in the HTML file, they use inline CSS.</li>
             <li>Inline styles let you change how one thing looks on a webpage by putting a special code right next to it. This is good for making fast and lasting changes, but it's not very flexible. For a lot of changes at once, it takes more work than using the other methods.</li>
             <li>An example of inline CSS is using the style attribute to change the color of a single h1 heading: < h1 style="color:red;">Prework Study Guide < /h1></li>
           </ul>
+          </br>
           <h3>Internal CSS Style Sheet</h3>
+          </br>
           <ul>
             <li>Internal style sheets can include CSS ules for the webpage in the head section of the HTML file, but the rules only apply to that page.</li>
             <li>You can configure CSS classes and ID's, whcih are used to identify elements, to style multiple elements in the page code. A single change will affect all tagged elements.</li>
@@ -44,18 +52,53 @@
               color: red;
             }</li>
           </ul>
+          </br>
           <h3>External CSS Style Sheet</h3>
+          </br>
           <ul>
             <li>Inline CSS and internal style sheets are totally acceptable methods under certain conditions, but the most common way to style a webpage is by using an external CSS style sheet.</li>
             <li>This allows you to keep all your CSS rules in a separate file, making design changes easier</li>
             <li>When using External SS, we link the file using a < link > element placed in the HTML's head like so:  < link rel="stylesheet" href="./assets/style.css" /></li>
             <li>Separation of concerns is a widely used term in web development and refers to separating code into different files based on use. It is one of the key design principles that we practice in the boot camp. Separation of concerns is based on the idea that each section of code should have its own responsibility.</li>
-          </ul>
+          </br>
+          </br>
+          <img class="Diagram" src="./assets/CSS_Diagram_01.png", alt="CSS_Diagram_01">
+          </br>
+          <li><b>Selector: </b> defines the element or attributes to which the rules, or declarations, will apply.</li>
+          <li><b>Declarations: </b>contain two important components, the CSS property we want to apply, and the value of the property.</li>
+          <li><b>margin: </b>indicates how much space we want around the outside of an element; 0 means no extra space around the element</li>
+          <li><b>padding: </b>often confused with margin, but not the same. Adds space around the content <b>inside</b> an element. When you increase padding, it actually makes the whole element bigger. Padding is located inside element, whereas margin is a transparent buffer outside the element.</li>
+          </br>
+          <img class="Diagram" src="./assets/CSS_Box_Model_Diagram.png", alt="CSS_Box_Model_Diagram">
+          </br>
+          <li><b>"*" selector:</b> applies the rule to all of the elements visible on the page. * is a Wildcard symbol.</li>
+          <li>You can apply rules to multiple selectors by separating them with a comma like so:<b> header,
+            footer {
+                width: 100%;
+                height: 120px;
+                background-color: blue;
+                color: white;
+            }</b></li>
+          <li><b>img</b> Selectors with a display property that is assigned with the block value will assign each image to start on a new line.</li>
+          <li>When we create an external CSS file, we need to link it to the HTML file. To do this, we will use the HTML < link > element.</li>
+          <li>For this project, we would need to add this to the head section of the html file. <b>< link rel="stylesheet" href="./assets/style.css" ></b></li>
+          <li>the <b>< link ></b> element creates the connection to the external file, the <b>ref</b> attribute specifies the relationship between the current document and the linked resource, and the <b>href</b> attribute specifies the location (URL) of the external resource.</li>
+          <li>Class attributes allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector. Then the class attribute can be assigned to the element in the HTML, enabling us to freely choose which elements will be assigned the CSS rule.</li>
+          </br>
+          <img class="Diagram" src="/assets/CSS_Class_Example.png" alt="CSS_Class_Example">
+          </br>
+          <li>The period preceding card designates this as a class selector. Any HTML element assigned to the class, card, will gain these property assignments from the CSS.</li>
+          <li>The first declaration addresses the width of the element at 80% of the available width.</li>
+          <li>The margin property assigns 40px to the top and bottom, and the auto value to the left and right.</li>
+          <li>The border property assigns a border with a width of 5px that is solid and gray.</li>
+          <li>The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color. In our example, the X offset is 5px and defines the width or extent of the shadow on the X axis (or to the right of the box); the Y offset is 10px and defines the extent on the Y axis (or just below the box). We haven’t defined the blur or spread radius here, but you’ll learn more about this in time. We’ve used an HTML hexadecimal code to define the color.</li>
+          <li>We have declared all the property assignments for the class selector, .card, and made sure the class attribute, card, has also been assigned to the correct < section > elements in the markup</li>
         </ul>
       </section>
-
+      </br>
       <section class="card" id="git-section">
         <h2>Git</h2>
+        </br>
         <ul>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
@@ -65,9 +108,10 @@
           <li>git push origin (branch-name): pushes commit to source</li>
         </ul>
       </section>
-
+      </br>
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
+        </br>
         <ul>
           <li>Enter your JavaScript notes here</li>
         </ul>
