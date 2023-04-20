@@ -12,8 +12,9 @@
       </br></br>
       <h1 style="text-align: center; color: #00fff4;">Prework Study Guide</h1>
       <center><img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." /> </center>
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
-    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
     <main>
 
       <section class="card" id="html-section">
@@ -97,7 +98,7 @@
         <h2>JavaScript</h2>
         <ul>
           <li>JavaScript is the tool that takes a static HTML/CSS webpage and makes it interactive, and was invented by Brendan Eich</li>
-          <li><b>Control Flow:</b> the order in which a computer executes code in a JavaScript file</li>
+          <li><b>Control Flow:</b> the order in which a computer executes code in a JavaScript file. In JavaScript, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page.</li>
           <li>We place the script element near the bottom of the HTML file because the browser reads code in the order it appears in the file. If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency.</li>
           <img class="DiagramThin" src="/assets/Diagram_js_Hello_world.png" alt="Hello_World_JavaScript">
           <li>The function querySelector() grabs a reference, in this case to our heading, and then stores it in a variable called myHeading. Similar to CSS selectors, when we want to do something to an element, we need to select it first. This code then sets the heading text content to "Hello world!"</li>
@@ -153,7 +154,9 @@
                 <img class="Diagram" src="/assets/Diagram_js_image_switcher.png" alt="Javascript_Image_Switcher_Example">
                 <li>Save all files and load index.html in the browser. Now when you click the image, it should change to the other one.</li>
             </ol>
-          <li>This is what happened. You stored a reference to your "img" element in myImage. Next, you made its onclick event handler property equal to a function with no name (an "anonymous" function). So every time this element is clicked:</li>            
+            This is what happened. You stored a reference to your "img" element in myImage. Next, you made its onclick event handler property equal to a function with no name (an "anonymous" function). So every time this element is clicked:
+            </br>
+            </br>
           <ol>
               <li>The code retrieves the value of the image's src attribute.</li>
               <li>The code uses a conditional to check if the src value is equal to the path of the original image: </li>
@@ -228,6 +231,150 @@
             <img class="DiagramScreenshot" src="/assets/Diagram_Types_R.png" alt="JavaScript_Types_R">
             <img class="DiagramScreenshot" src="/assets/Diagram_Types_S.png" alt="JavaScript_Types_S">
           </ul>
+          <li>In JavaScript, to declare a variable, we use the var keyword. After the var keyword, we give the variable a name. This name must be unique because it is how we will reference the information stored in the variable in our code.
+
+            Finally, we use an assignment operator = to assign the specific data that we want stored in our variable. In the example involving a container named "shape" that stores a circle, we can express that in JavaScript as follows:</li>
+            <center>var shape = "circle";</center>
+            </br>
+          <li>In this example, "shape" is the name of our container, or variable, and the data it stores is "circle".</li>
+          <li>All strings are surrounded by quotation marks.</li>
+          <li><b>"console.log(topics);"</b> will print to the console the string value of the variable "topics". The word console refers to a test environment that developers use to check out their code. The second part, .log(), is a method, which means a set of instructions that can be executed by a computer. The .log() method will output whatever we add inside the parentheses to the console.</li>
+          <li>To link a file named "script.js" to your main html file, add the following code under the "footer" element and above the closing element for "body":</li>
+          < s c r i p t src="./assets/script.js"> < /s c r i p t >
+          </br>
+          <li>Whereas the style.css file is linked within the <head> element, the script.js file is linked within the <body> element.</li>
+          <li>Control flow can be interrupted. We can use conditional statements and loops to control the order in which code is executed, or if it is even executed at all. For example, we can reverse engineer code to set up a conditional statement that lets us alter the control flow so that code executes only if a certain condition is met.</li>
+          <li>To create an if statement in JavaScript, we use the same logic and similar syntax, shown in the following code example:</li>
+          if (condition) {
+          </br>
+            // block of code to be executed if condition is true
+          </br>}
+          </br>
+          </br>
+          <li>What exactly do we mean by “truthy” and “falsy” in Javascript? A value is considered falsy if it is one of the following values: 0, -0, On, "", null, undefined, NaN, or a Boolean data type with the value of false. All other values, including a Boolean with the value of true, are considered truthy.</li>
+          <li>Sometimes we want to provide more conditions than just if. In JavaScript, we can have more than one condition—just like we did in the dishes pseudocode—by using else if, as demonstrated in the following code example:</li>
+          if (first condition) {
+          </br>
+            // block of code to be executed if first condition is true
+          </br>
+         } else if (second condition) {</br>
+            // block of code to be executed if second condition is true</br>
+         }
+          </br>
+          </br>
+          <li>The computer will continue through all of the conditions that we list, evaluating whether or not a condition is truthy. Once it finds a condition that is truthy, it will run the code in the curly brackets associated with that condition, and then break out of the if statement.
+          </br>
+          </br>
+          The following is an example of an if statement:</li>
+          if (0) {
+          </br>
+            console.log("I'm 0!")
+          </br>
+          } else if (null) {
+          </br>
+            console.log("I'm null!")
+          </br>
+          } else if (true) {
+          </br>
+            console.log("I'm true!")
+          </br>
+          }
+          </br>
+          </br>
+          <li>The 0 and null values are both falsy, so the computer won't execute the code between the proceeding curly brackets. When the computer gets to the truthy value (true), it executes the code in the following line.</li>
+          <li>As you can see in the following code block, we can first replace the topics variable with a new variable called topic with a value of HTML, and then we set up an if statement with several conditions.</li>
+          var topic = "HTML";
+          </br>
+          </br>
+          if (topic === 'HTML') {
+          </br>
+            console.log("Let's study HTML!");
+          </br>
+          } else if (topic === 'CSS') {
+          </br>
+            console.log("Let's study CSS!");
+          </br>
+          } else if (topic === 'Git') {
+          </br>
+            console.log("Let's study Git!");
+          </br>
+          } else if (topic === 'JavaScript') {
+          </br>
+            console.log("Let's study JavaScript!");
+          </br>
+          } else {
+          </br>
+            console.log('Please try again!');
+          </br>
+          }
+          </br>
+          </br>
+          <li>Notice that we are using = = = in each condition. The strict equality operator (= = =) checks to see if two values are equal, and returns a Boolean result true if the values are equal and false if the values are not equal. The following image shows a visual representation of this concept:</li>
+          <img class="Diagram" src="assets/Diagram_js_equality_operator.png" alt="JavaScript_Equality_Operator">
+          <li>We are checking to see if the topic variable exactly equals a certain value. It will then run whatever code block corresponds with the condition that the computer evaluates as truthy. If none of the conditions evaluate as truthy, 'Please try again!' will be logged to the console.</li>
+          <li>An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way.</li>
+          <li>To create an array, we declare a variable in the same way that we declared a variable with only one data item. That is, we use var and then give the variable a name. However, instead of assigning the variable to a single value, we assign the variable to a group of values.</li>
+          <li>The following variable declaration demonstrates how we would represent our group of shapes in an array named shapes:</li>
+          var shapes = ["triangle", "square", "pentagon", "circle"];
+          </br>
+          </br>
+          <li>A single array can store different types of data, such as strings, numbers, and so on. Let's look at an example. The following array stores information about a student named Lu, including his name, age, and whether he is currently enrolled:</li>
+          var studentInfo = ["Lu", 54, true];
+          </br>
+          </br>
+          <li>Notice that only the student's name, "Lu", is surrounded by quotation marks. That is because Lu is a string, and strings need to be contained within quotation marks. Since 54 is a number and true is a Boolean value, no quotation marks are necessary for those values. As you can see, this array contains a string, a number, and a Boolean value.</li>
+          <li>Arrays are useful tools for storing multiple items with different data types in a single variable, but not all arrays must have multiple data types. The array that we will add to our project only contains strings.</li>
+          <li>When working with single data items, we simply used the variable name, like shape, to access the stored data, circle, as shown in the following line of code:</li>
+          var shape = "circle";
+          </br>
+          <li>If we used this same approach with our shapes array, it would return the entire array with all the data items in it.</li>
+          <li>To work with individual data items inside an array, we need to have one more piece of information: the location of the data item in the array. This location is identified with a unique number called an index. Using each piece of data's index, or location number, we can access individual data inside the array.</li>
+          <li>If we wanted to access only the triangle, we start with the name of the variable that stores the array, which in our case is shapes. Then we add the index of triangle to the end of the array name in square brackets, as shown in the following line of code:</li>
+          shapes[0];
+          </br>
+          </br>
+          <li>In order to see this in action, we should log it in the console, using the following line of code:</li>
+          console.log(shapes[0]);
+          </br>
+          </br>
+          <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over. Developers must use another statement, such as the conditional if statement that we just learned, to interrupt the control flow by executing a block of code a specific number of times.</li>
+          <li>By using a for loop, we can tell the computer to go through each of the shapes in our array and log them to the console until there are no shapes left. In order to use the for loop, we need the shape's index and the array's length. The array length is important because the for loop needs to know how many times the code will run until there are no items left in the array. We can find the length of an array by using a built-in property of an array, appropriately named length.</li>
+          <li>A for loop contains the following three important statements:</li>
+            <ul>
+                <li>The first statement determines the starting point for our loop. Since we want to start at the beginning of the array, we declare a variable x and give it a value of 0 (because the first index of an array is always 0), as shown in the following line of code:</li>
+                var x = 0;
+                </br>
+                </br>
+                <li>The second statement is the condition. As long as the number in the variable x is less than the length of the array, the loop will keep running. This will allow the loop to execute one time for each item in the array. We use the length built-in array property on our shapes array to express that condition, as shown in the following line of code:</li>
+                x < shapes.length;
+                </br>
+                </br>
+                <li>The final statement is what allows the array to iterate over each item. Since indices follow a predictable pattern, we know the number increases by 1 each time. The code x++ is a shortcut way of writing x+1. Now every time the code loops, x will increase by 1, as shown in the following line of code:</li>
+                x++
+                </br>
+                </br>
+            </ul>
+          <li>A for loop starts with—you guessed it—for. So far, our for loop looks like the following code:</li>
+          for(var x = 0; x < shapes.length; x++) {
+          </br>
+            // code block
+          </br>
+           }
+          </br>
+          </br>
+          <li>Finally, we put the code that we want to be executed for each loop inside curly brackets. In our case, we want each of the items in the shapes array to be logged in the console. In place of an actual index number, however, we can add the variable x from our for loop. Now, each time the code runs, x will increase by 1 and the next array item will log to the console. The following code shows how this is done:</li>
+          for(var x = 0; x < shapes.length; x++) {
+          </br>
+            console.log(shapes[x]);
+          </br>
+           }
+          </br>
+          </br>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </section>
 
@@ -236,5 +383,6 @@
     <footer>
       <p style="text-align: center; color: #00fff4;">I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
