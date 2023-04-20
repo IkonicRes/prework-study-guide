@@ -18,6 +18,8 @@ h1,
 h2,
 h3 {
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 img {
@@ -26,7 +28,7 @@ img {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 75px;
+
 }
 
 .Diagram {
@@ -35,10 +37,41 @@ img {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 75px;
+    margin-top: 75px;
 }
 
-ul {
-    padding-left: 40px;
+.DiagramThin {
+    display: block;
+    height: 75px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 75px;
+    margin-top: 75px;
+}
+
+.DiagramGiant {
+    display: block;
+    height: 688px;
+    width: 641px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 75px;
+    margin-top: 75px;
+}
+
+.DiagramScreenshot {
+    display: block;
+    height: 1032px;
+    width: 962px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul,
+ol {
+    padding: 35px;
     font-size: 20px;
 }
 
