@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0," />
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body style="background-color: rgb(58, 58, 58); color: #00fff4;">
     <header id="header">
       </br></br>
       <h1 style="text-align: center; color: #00fff4;">Prework Study Guide</h1>
-      <center><img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." /> </center>
+      <center><img src=".../assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." /> </center>
       <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
@@ -53,14 +53,14 @@
           <ul>
             <li>Inline CSS and internal style sheets are totally acceptable methods under certain conditions, but the most common way to style a webpage is by using an external CSS style sheet.</li>
             <li>This allows you to keep all your CSS rules in a separate file, making design changes easier</li>
-            <li>When using External SS, we link the file using a < link > element placed in the HTML's head like so:  < link rel="stylesheet" href="./assets/style.css" /></li>
+            <li>When using External SS, we link the file using a < link > element placed in the HTML's head like so:  < link rel="stylesheet" href=".../assets/style.css" /></li>
             <li>Separation of concerns is a widely used term in web development and refers to separating code into different files based on use. It is one of the key design principles that we practice in the boot camp. Separation of concerns is based on the idea that each section of code should have its own responsibility.</li>
-          <img class="Diagram" src="./assets/CSS_Diagram_01.png", alt="CSS_Diagram_01">
+          <img class="Diagram" src=".../assets/CSS_Diagram_01.png", alt="CSS_Diagram_01">
           <li><b>Selector: </b> defines the element or attributes to which the rules, or declarations, will apply.</li>
           <li><b>Declarations: </b>contain two important components, the CSS property we want to apply, and the value of the property.</li>
           <li><b>margin: </b>indicates how much space we want around the outside of an element; 0 means no extra space around the element</li>
           <li><b>padding: </b>often confused with margin, but not the same. Adds space around the content <b>inside</b> an element. When you increase padding, it actually makes the whole element bigger. Padding is located inside element, whereas margin is a transparent buffer outside the element.</li>
-          <img class="Diagram" src="./assets/CSS_Box_Model_Diagram.png", alt="CSS_Box_Model_Diagram">
+          <img class="Diagram" src=".../assets/CSS_Box_Model_Diagram.png", alt="CSS_Box_Model_Diagram">
           <li><b>"*" selector:</b> applies the rule to all of the elements visible on the page. * is a Wildcard symbol.</li>
           <li>You can apply rules to multiple selectors by separating them with a comma like so:<b> header,
             footer {
@@ -71,10 +71,10 @@
             }</b></li>
           <li><b>img</b> Selectors with a display property that is assigned with the block value will assign each image to start on a new line.</li>
           <li>When we create an external CSS file, we need to link it to the HTML file. To do this, we will use the HTML < link > element.</li>
-          <li>For this project, we would need to add this to the head section of the html file. <b>< link rel="stylesheet" href="./assets/style.css" ></b></li>
+          <li>For this project, we would need to add this to the head section of the html file. <b>< link rel="stylesheet" href=".../assets/style.css" ></b></li>
           <li>the <b>< link ></b> element creates the connection to the external file, the <b>ref</b> attribute specifies the relationship between the current document and the linked resource, and the <b>href</b> attribute specifies the location (URL) of the external resource.</li>
           <li>Class attributes allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector. Then the class attribute can be assigned to the element in the HTML, enabling us to freely choose which elements will be assigned the CSS rule.</li>
-          <img class="Diagram" src="/assets/CSS_Class_Example.png" alt="CSS_Class_Example">
+          <img class="Diagram" src="./assets/CSS_Class_Example.png" alt="CSS_Class_Example">
           <li>The period preceding card designates this as a class selector. Any HTML element assigned to the class, card, will gain these property assignments from the CSS.</li>
           <li>The first declaration addresses the width of the element at 80% of the available width.</li>
           <li>The margin property assigns 40px to the top and bottom, and the auto value to the left and right.</li>
@@ -184,7 +184,7 @@
               </br></br>
               <li>Previously, we pointed out that deploying a website gave our website a unique, public address on the web, or URL. A URL, or Uniform Resource Locator, is simply the web address of a resource on the web to make finding the resource easier—this fulfills a similar function as a street address.</li>
               <li>It is important to note that when we deploy, the files we worked with during development do not change. In fact, it is common for developers to keep working on their project locally even after they deploy for the first time, and to re-deploy when they want to publish those changes. This is part of what makes the internet so dynamic and constantly evolving: it is easy to make changes to websites even after they are deployed.</li>
-              <img class="Diagram" src="assets/Diagram_Deployment_application_types.png" alt="Deployment_application_types">
+              <img class="Diagram" src="./assets/Diagram_Deployment_application_types.png" alt="Deployment_application_types">
               </br>
               </br>
               <li>Your browser is really the heart of the "client" experience. The browser allows an internet user to type in requests for different resources from the web and render them into a unified user experience.</li>
@@ -229,7 +229,7 @@
                 <li>the response is sent to the browser</li>
                 <li>If the browser receives an html it'll then make further requests for linked js, css, and image files.</li>
               </ol>
-              <img class="DiagramGiant" src="assets/Diagram_application_types_detailed.png" alt="Application_types_in_detail">
+              <img class="DiagramGiant" src="./assets/Diagram_application_types_detailed.png" alt="Application_types_in_detail">
               <li>If running a static website with basic html/css/js files there are endless hosting solutions usually using Apache Servers running PHP based cPanel dashboards. Although If you want to use React/Vue/Svelte/Angular you are going to want a service with Continuous Deployment so you don't have to reupload all your content each time you deploy and that's where Netlify and Vercel fit in wonderfully. </li>
               <li>Continuous Deployment is the concept of creating an automated pipeline of your deployment process. Typically this takes the form of updating your code on GitHub which then triggers automation that ends in your project being deployed (Netlify and Vercel make this very easy). This type of pipeline is also used to integrate code from others into a project automating a pipeline of tests and this is referred to as Continuous Integration. (CI/CD)</li>
               <h3>Virtual Private Server (VPS)</h3>
@@ -244,9 +244,9 @@
                   <li>run your application on a port (for example, port 3000)</li>
                   <li>configure apache/nginx to route requests for your application to the correct port</li>
               </ul>
-              <img class="DiagramScreenshot" src="/assets/Diagram_heroku_and_docker.png" alt="Heroku_and_Docker_info">
-              <img class="DiagramScreenshot" src="/assets/Diagram_environmental_variables.png" alt="Environment_variables">
-              <img class="DiagramScreenshot" src="/assets/Diagram_other_deployment_stuff.png" alt="Other_Deployment_Considerations">
+              <img class="DiagramScreenshot" src="./assets/Diagram_heroku_and_docker.png" alt="Heroku_and_Docker_info">
+              <img class="DiagramScreenshot" src="./assets/Diagram_environmental_variables.png" alt="Environment_variables">
+              <img class="DiagramScreenshot" src="./assets/Diagram_other_deployment_stuff.png" alt="Other_Deployment_Considerations">
               <li>If your publishing source is a branch and folder, the entry file must be at the top level of the source folder on the source branch. For example, if your publishing source is the /docs folder on the main branch, your entry file must be located in the /docs folder on a branch called main.</li>
               <li></li>
           </ul>
@@ -258,7 +258,7 @@
           <li>JavaScript is the tool that takes a static HTML/CSS webpage and makes it interactive, and was invented by Brendan Eich</li>
           <li><b>Control Flow:</b> the order in which a computer executes code in a JavaScript file. In JavaScript, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page.</li>
           <li>We place the script element near the bottom of the HTML file because the browser reads code in the order it appears in the file. If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency.</li>
-          <img class="DiagramThin" src="/assets/Diagram_js_Hello_world.png" alt="Hello_World_JavaScript">
+          <img class="DiagramThin" src="./assets/Diagram_js_Hello_world.png" alt="Hello_World_JavaScript">
           <li>The function querySelector() grabs a reference, in this case to our heading, and then stores it in a variable called myHeading. Similar to CSS selectors, when we want to do something to an element, we need to select it first. This code then sets the heading text content to "Hello world!"</li>
           <li>Variables are containers that store values. You start by declaring a variable with the let keyword, followed by the name you give to the variable:</li>
           <center>let myVariable;</center>
@@ -279,29 +279,29 @@
           <center>let myVariable = "Bob";</br>myVariable = "Steve";</center>
           </br>
           <li>Note that variables may hold values that have different data types:</li>
-          <img class="DiagramGiant" src="/assets/Diagram_js_types.png" alt="JavaScript_Types">
+          <img class="DiagramGiant" src="./assets/Diagram_js_types.png" alt="JavaScript_Types">
           <li>Variables are necessary to do anything interesting in programming. If values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or change an image displayed in an image gallery.</li>
           <li>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS:</li>
-          <img class="DiagramThin" src="/assets/Diagram_js_comment_example.png" alt="JavaScript_Comment_Example">
+          <img class="DiagramThin" src="./assets/Diagram_js_comment_example.png" alt="JavaScript_Comment_Example">
           <li>If your comment contains no line breaks, it's an option to put it behind two slashes like this:</li>
-          <img class="DiagramThin" src="/assets/Diagram_js_comment_single.png" alt="JavaScript_Single_Comment_Example">
+          <img class="DiagramThin" src="./assets/Diagram_js_comment_single.png" alt="JavaScript_Single_Comment_Example">
           <li>An operator is a mathematical symbol that produces a result based on two values (or variables). In the following table, you can see some of the simplest operators, along with some examples to try in the JavaScript console.</li>
-          <img class="DiagramGiant" src="/assets/Diagram_js_operators_A.png" alt="JavaScript_Operators_Diagram_A">
-          <img class="DiagramGiant" src="/assets/Diagram_js_operators_B.png" alt="JavaScript_Operators_Diagram_B">
+          <img class="DiagramGiant" src="./assets/Diagram_js_operators_A.png" alt="JavaScript_Operators_Diagram_A">
+          <img class="DiagramGiant" src="./assets/Diagram_js_operators_B.png" alt="JavaScript_Operators_Diagram_B">
           <li>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the if...else statement. For example:</li>
           <img class="Diagram" src="./assets/Diagram_js_conditional.png" alt="Diagram_js_conditional">
           <li>The expression inside the if () is the test. This uses the strict equality operator (as described above) to compare the variable iceCream with the string chocolate to see if the two are equal. If this comparison returns true, the first block of code runs. If the comparison is not true, the second block of code—after the else statement—runs instead.</li>
           <li>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions. For example:</li>
-          <img class="Diagram" src="/assets/Diagram_js_functions.png" alt="Javascript_Function_Diagram">
+          <img class="Diagram" src="./assets/Diagram_js_functions.png" alt="Javascript_Function_Diagram">
           <li>These functions, document.querySelector and alert, are built into the browser. If you see something which looks like a variable name, but it's followed by parentheses— () —it is likely a function. Functions often take arguments: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.</li>
           <li>For example, the alert() function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display.</li>  
           <li>You can also define your own functions. In the next example, we create a simple function which takes two numbers as arguments and multiplies them:</li>  
-          <img class="Diagram" src="/assets/Diagram_js_multiply_function.png" alt="Javascript_Multiply_function">
+          <img class="Diagram" src="./assets/Diagram_js_multiply_function.png" alt="Javascript_Multiply_function">
           <li>Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the click event, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:</li>  
-          <img class="DiagramThin" src="/assets/Diagram_js_click_event_example.png" alt="Javascript_click_event_example">
+          <img class="DiagramThin" src="./assets/Diagram_js_click_event_example.png" alt="Javascript_click_event_example">
           <li>There are a number of ways to attach an event handler to an element. Here we select the <html> element. We then call its addEventListener() function, passing in the name of the event to listen to ('click') and a function to run when the event happens. </li>  
           <li>The function we just passed to addEventListener() here is called an <i>anonymous function</i>, because it doesn't have a name. There's an alternative way of writing anonymous functions, which we call an arrow function. An arrow function uses () => instead of function (): </li>  
-          <img class="DiagramThin" src="/assets/Diagram_js_click_event_example_arrow_version.png" alt="Javascript_click_event_example_arrow_function">
+          <img class="DiagramThin" src="./assets/Diagram_js_click_event_example_arrow_version.png" alt="Javascript_click_event_example_arrow_function">
           <h3>Adding an image changer<h3>
             <h4>In this section, you will learn how to use JavaScript and DOM API features to alternate the display of one of two images. This change will happen as a user clicks the displayed image.</h4>
             <ol>
@@ -309,7 +309,7 @@
                 <li>Save this image in your images folder.</li>
                 <li>Rename the image firefox2.png.</li>
                 <li>Add the following JavaScript code to your main.js file. </li>
-                <img class="Diagram" src="/assets/Diagram_js_image_switcher.png" alt="Javascript_Image_Switcher_Example">
+                <img class="Diagram" src="./assets/Diagram_js_image_switcher.png" alt="Javascript_Image_Switcher_Example">
                 <li>Save all files and load index.html in the browser. Now when you click the image, it should change to the other one.</li>
             </ol>
             This is what happened. You stored a reference to your "img" element in myImage. Next, you made its onclick event handler property equal to a function with no name (an "anonymous" function). So every time this element is clicked:
@@ -327,21 +327,21 @@
           Next, let's change the page title to a personalized welcome message when the user first visits the site. This welcome message will persist. Should the user leave the site and return later, we will save the message using the Web Storage API. We will also include an option to change the user, and therefore, the welcome message.
           <ol>
             <li>In index.html, add the following line just before the "script" element:</li>
-            <img class="DiagramThin" src="/assets/Diagram_js_welcome_message_A.png" alt="Welcome_Message_Example_A">
+            <img class="DiagramThin" src="./assets/Diagram_js_welcome_message_A.png" alt="Welcome_Message_Example_A">
             <li>In main.js, place the following code at the bottom of the file, exactly as it is written. This takes references to the new button and the heading, storing each inside variables: </li>
-            <img class="DiagramThin" src="/assets/Diagram_js_welcome_message_B.png" alt="Welcome_Message_Example_B">
+            <img class="DiagramThin" src="./assets/Diagram_js_welcome_message_B.png" alt="Welcome_Message_Example_B">
             <li>Add the following function to set the personalized greeting. This won't do anything yet, but this will change soon. </li>
-            <img class="Diagram" src="/assets/Diagram_js_welcome_message_C.png" alt="Welcome_Message_Example_C">
+            <img class="Diagram" src="./assets/Diagram_js_welcome_message_C.png" alt="Welcome_Message_Example_C">
             The setUserName() function contains a prompt() function, which displays a dialog box, similar to alert(). This prompt() function does more than alert(), asking the user to enter data, and storing it in a variable after the user clicks OK. In this case, we are asking the user to enter a name. Next, the code calls on an API localStorage, which allows us to store data in the browser and retrieve it later. We use localStorage's setItem() function to create and store a data item called 'name', setting its value to the myName variable which contains the user's entry for the name. Finally, we set the textContent of the heading to a string, plus the user's newly stored name. 
             </br>
             </br>
             <li>Add the following condition block. We could call this initialization code, as it structures the app when it first loads.</li>
-            <img class="Diagram" src="/assets/Diagram_js_welcome_message_D.png" alt="Welcome_Message_Example_D">
+            <img class="Diagram" src="./assets/Diagram_js_welcome_message_D.png" alt="Welcome_Message_Example_D">
             This first line of this block uses the negation operator (logical NOT, represented by the !) to check whether the name data exists. If not, the setUserName() function runs to create it. If it exists (that is, the user set a user name during a previous visit), we retrieve the stored name using getItem() and set the textContent of the heading to a string, plus the user's name, as we did inside setUserName(). 
             </br>
             </br>
             <li>Put this onclick event handler (below) on the button. When clicked, setUserName() runs. This allows the user to enter a different name by pressing the button. </li>
-            <img class="DiagramThin" src="/assets/Diagram_js_welcome_message_E.png" alt="Welcome_Message_Example_E">
+            <img class="DiagramThin" src="./assets/Diagram_js_welcome_message_E.png" alt="Welcome_Message_Example_E">
             When you run the example and get the dialog box that prompts you to enter your user name, try pressing the Cancel button. You should end up with a title that reads Mozilla is cool, null. This happens because—when you cancel the prompt—the value is set as null. Null is a special value in JavaScript that refers to the absence of a value.
             </br>
             </br>
@@ -349,15 +349,15 @@
             </br>
             </br>
             To avoid these problems, you could check that the user hasn't entered a blank name. Update your setUserName() function to this:
-            <img class="Diagram" src="/assets/Diagram_js_welcome_message_F.png" alt="Welcom_Message_Example_F">
+            <img class="Diagram" src="./assets/Diagram_js_welcome_message_F.png" alt="Welcom_Message_Example_F">
             In human language, this means: If myName has no value, run setUserName() again from the start. If it does have a value (if the above statement is not true), then store the value in localStorage and set it as the heading's text.
           </ol>
           <h3>JavaScript data types and data structures</h3>
           <ul>
             <li>JavaScript is a dynamic language with dynamic types. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:</li>
-            <img class="DiagramThin" src="/assets/Diagram_js_dynamic_weak_typing_A.png" alt="JavaScript_dynamic_weak_typing_A">
+            <img class="DiagramThin" src="./assets/Diagram_js_dynamic_weak_typing_A.png" alt="JavaScript_dynamic_weak_typing_A">
             <li>JavaScript is also a weakly typed language, which means it allows implicit type conversion when an operation involves mismatched types, instead of throwing type errors.</li>
-            <img class="Diagram" src="/assets/Diagram_js_dynamic_weak_typing_B.png" alt="JavaScript_dynamic_weak_typing_B">
+            <img class="Diagram" src="./assets/Diagram_js_dynamic_weak_typing_B.png" alt="JavaScript_dynamic_weak_typing_B">
             <li>Implicit coercions is very convenient, but can be a potential footgun if developers didn't intend to do the conversion, or intend to convert in the other direction (for example, string to number instead of number to string). For symbols and BigInts, JavaScript has intentionally disallowed certain implicit type conversions.</li>
           </ul> 
           <h3>Primitive Values</h3> 
@@ -365,29 +365,29 @@
             <li>All types except Object define immutable values represented directly at the lowest level of the language. We refer to values of these types as primitive values.</li>
             <li>All primitive types, except null, can be tested by the typeof operator. typeof null returns "object", so one has to use === null to test for null.</li>
             <li>All primitive types, except null and undefined, have their corresponding object wrapper types, which provide useful methods for working with the primitive values. For example, the Number object provides methods like toExponential(). When a property is accessed on a primitive value, JavaScript automatically wraps the value into the corresponding wrapper object and accesses the property on the object instead. However, accessing a property on null or undefined throws a TypeError exception, which necessitates the introduction of the optional chaining operator.</li>
-            <img class="DiagramGiant" src="/assets/Diagram_js_typing_Primitives.png" alt="JavaScript_Primitive_Types">
+            <img class="DiagramGiant" src="./assets/Diagram_js_typing_Primitives.png" alt="JavaScript_Primitive_Types">
             The object wrapper classes' reference pages contain more information about the methods and properties available for each type, as well as detailed descriptions for the semantics of the primitive types themselves.
             </br>
             </br>
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_A.png" alt="JavaScript_Types_A">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_B.png" alt="JavaScript_Types_B">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_C.png" alt="JavaScript_Types_C">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_D.png" alt="JavaScript_Types_D">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_E.png" alt="JavaScript_Types_E">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_F.png" alt="JavaScript_Types_F">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_G.png" alt="JavaScript_Types_G">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_H.png" alt="JavaScript_Types_H">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_I.png" alt="JavaScript_Types_I">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_J.png" alt="JavaScript_Types_J">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_K.png" alt="JavaScript_Types_K">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_L.png" alt="JavaScript_Types_L">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_M.png" alt="JavaScript_Types_M">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_N.png" alt="JavaScript_Types_N">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_O.png" alt="JavaScript_Types_O">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_P.png" alt="JavaScript_Types_P">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_Q.png" alt="JavaScript_Types_Q">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_R.png" alt="JavaScript_Types_R">
-            <img class="DiagramScreenshot" src="/assets/Diagram_Types_S.png" alt="JavaScript_Types_S">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_A.png" alt="JavaScript_Types_A">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_B.png" alt="JavaScript_Types_B">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_C.png" alt="JavaScript_Types_C">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_D.png" alt="JavaScript_Types_D">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_E.png" alt="JavaScript_Types_E">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_F.png" alt="JavaScript_Types_F">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_G.png" alt="JavaScript_Types_G">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_H.png" alt="JavaScript_Types_H">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_I.png" alt="JavaScript_Types_I">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_J.png" alt="JavaScript_Types_J">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_K.png" alt="JavaScript_Types_K">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_L.png" alt="JavaScript_Types_L">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_M.png" alt="JavaScript_Types_M">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_N.png" alt="JavaScript_Types_N">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_O.png" alt="JavaScript_Types_O">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_P.png" alt="JavaScript_Types_P">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_Q.png" alt="JavaScript_Types_Q">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_R.png" alt="JavaScript_Types_R">
+            <img class="DiagramScreenshot" src="./assets/Diagram_Types_S.png" alt="JavaScript_Types_S">
           </ul>
           <li>In JavaScript, to declare a variable, we use the var keyword. After the var keyword, we give the variable a name. This name must be unique because it is how we will reference the information stored in the variable in our code.
 
@@ -468,7 +468,7 @@
           </br>
           </br>
           <li>Notice that we are using = = = in each condition. The strict equality operator (= = =) checks to see if two values are equal, and returns a Boolean result true if the values are equal and false if the values are not equal. The following image shows a visual representation of this concept:</li>
-          <img class="Diagram" src="assets/Diagram_js_equality_operator.png" alt="JavaScript_Equality_Operator">
+          <img class="Diagram" src="./assets/Diagram_js_equality_operator.png" alt="JavaScript_Equality_Operator">
           <li>We are checking to see if the topic variable exactly equals a certain value. It will then run whatever code block corresponds with the condition that the computer evaluates as truthy. If none of the conditions evaluate as truthy, 'Please try again!' will be logged to the console.</li>
           <li>An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way.</li>
           <li>To create an array, we declare a variable in the same way that we declared a variable with only one data item. That is, we use var and then give the variable a name. However, instead of assigning the variable to a single value, we assign the variable to a group of values.</li>
