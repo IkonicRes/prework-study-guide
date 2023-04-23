@@ -45,7 +45,7 @@ img {
 
 .DiagramGiant {
     display: block;
-    height: 688px;
+    height: auto;
     width: 641px;
     margin-left: auto;
     margin-right: auto;
